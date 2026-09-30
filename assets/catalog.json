@@ -2758,13 +2758,16 @@
     "branch": "初等代数",
     "chapter": "计数与二项式",
     "order": "490",
-    "summary": "展开系数、通项、帕斯卡递推和奇偶项求和。",
+    "summary": "通过选取指标证明展开式，建立系数提取、帕斯卡递推及奇偶过滤。",
     "id": "a-binomial",
-    "title": "二项式定理与组合恒等式",
+    "title": "二项式定理与系数提取",
     "category": "知识",
     "links": [
       "a-counting",
-      "a-identities"
+      "a-double-counting",
+      "a-finite-differences",
+      "a-generating-functions",
+      "a-polynomial"
     ]
   },
   {
@@ -2801,13 +2804,14 @@
     "branch": "初等代数",
     "chapter": "复数与整除",
     "order": "530",
-    "summary": "模运算的相容性、一次同余方程与互素模数联立。",
+    "summary": "同余类运算、逆元条件、非互素系数的正确约分和全部解类。",
     "id": "a-congruences",
-    "title": "同余、逆元与中国剩余定理",
+    "title": "同余与一次同余方程",
     "category": "知识",
     "links": [
       "a-divisibility",
-      "a-linear-systems"
+      "a-crt",
+      "a-polynomial-congruences"
     ]
   },
   {
@@ -2815,12 +2819,14 @@
     "branch": "初等代数",
     "chapter": "计数与二项式",
     "order": "480",
-    "summary": "分类加法、分步乘法、组合数及可重复选择。",
+    "summary": "把加法、乘法及除法原则统一为有限集合映射的计数，推导排列组合与星杠双射。",
     "id": "a-counting",
-    "title": "计数原理、排列与组合",
+    "title": "有限计数的分类、分步与等纤维原则",
     "category": "知识",
     "links": [
+      "a-double-counting",
       "a-binomial",
+      "a-generating-functions",
       "k-probability"
     ]
   },
@@ -2828,14 +2834,32 @@
     "subject": "数学",
     "branch": "初等代数",
     "chapter": "复数与整除",
+    "order": "531",
+    "summary": "同时证明互素模数构造、非互素模数相容条件和最小公倍数意义下的唯一性。",
+    "id": "a-crt",
+    "title": "中国剩余定理与相容性",
+    "category": "知识",
+    "links": [
+      "a-divisibility",
+      "a-congruences",
+      "a-polynomial-interpolation",
+      "a-polynomial-congruences"
+    ]
+  },
+  {
+    "subject": "数学",
+    "branch": "初等代数",
+    "chapter": "复数与整除",
     "order": "520",
-    "summary": "带余除法、欧几里得算法、贝祖等式与素因子。",
+    "summary": "用带余除法与最小正线性组合刻画最大公因数，推导整除消去律与丢番图方程。",
     "id": "a-divisibility",
-    "title": "整数整除与最大公因数",
+    "title": "欧几里得算法与贝祖等式",
     "category": "知识",
     "links": [
       "a-congruences",
-      "a-polynomial-equations"
+      "a-crt",
+      "a-division",
+      "a-induction"
     ]
   },
   {
@@ -2843,13 +2867,31 @@
     "branch": "初等代数",
     "chapter": "整式与分式",
     "order": "90",
-    "summary": "带余除法的存在唯一性、余式定理与因式定理。",
+    "summary": "从首项消去证明带余除法的存在唯一性，说明余式、代入与重根条件的关系。",
     "id": "a-division",
-    "title": "多项式除法与余式定理",
+    "title": "多项式的带余除法与余式定理",
     "category": "知识",
     "links": [
       "a-polynomial",
-      "a-roots-vieta"
+      "a-roots-vieta",
+      "a-polynomial-interpolation",
+      "a-polynomial-congruences"
+    ]
+  },
+  {
+    "subject": "数学",
+    "branch": "初等代数",
+    "chapter": "计数与二项式",
+    "order": "481",
+    "summary": "先确定同一个有限对象集合，再用两种分类证明带权组合和与范德蒙德恒等式。",
+    "id": "a-double-counting",
+    "title": "双计数与组合恒等式",
+    "category": "知识",
+    "links": [
+      "a-counting",
+      "a-binomial",
+      "a-generating-functions",
+      "k-probability"
     ]
   },
   {
@@ -2911,6 +2953,22 @@
   },
   {
     "subject": "数学",
+    "branch": "初等代数",
+    "chapter": "数列与递推",
+    "order": "451",
+    "summary": "差分降低多项式次数，以二项式多项式构造离散的泰勒展开与有限和。",
+    "id": "a-finite-differences",
+    "title": "有限差分与牛顿插值展开",
+    "category": "知识",
+    "links": [
+      "a-binomial",
+      "a-polynomial-interpolation",
+      "a-summation",
+      "a-recurrence"
+    ]
+  },
+  {
+    "subject": "数学",
     "branch": "数学方法",
     "chapter": "几何、计数与分析工具",
     "level": "基础数学",
@@ -2922,6 +2980,23 @@
     "links": [
       "a-divisibility",
       "k-functions"
+    ]
+  },
+  {
+    "subject": "数学",
+    "branch": "初等代数",
+    "chapter": "数列与递推",
+    "order": "462",
+    "summary": "以形式幂级数编码数列，证明卷积乘法和可逆条件，逐项把递推化成有理式。",
+    "id": "a-generating-functions",
+    "title": "普通生成函数与递推的代数化",
+    "category": "知识",
+    "links": [
+      "a-linear-recurrences",
+      "a-counting",
+      "a-binomial",
+      "a-newton-identities",
+      "a-sequences"
     ]
   },
   {
@@ -3044,6 +3119,24 @@
   {
     "subject": "数学",
     "branch": "初等代数",
+    "chapter": "数列与递推",
+    "order": "461",
+    "summary": "用初值唯一性证明特征根通解，处理重根、零根退化与复根振荡。",
+    "id": "a-linear-recurrences",
+    "title": "二阶常系数递推与特征根",
+    "category": "知识",
+    "links": [
+      "a-recurrence",
+      "a-generating-functions",
+      "a-newton-identities",
+      "a-complex-polar",
+      "a-quadratic",
+      "a-complex"
+    ]
+  },
+  {
+    "subject": "数学",
+    "branch": "初等代数",
     "chapter": "方程与方程组",
     "order": "150",
     "summary": "代入、加减消元、二元行列式及相容性分类。",
@@ -3069,6 +3162,22 @@
       "a-exponential",
       "a-inverse",
       "a-explog-equations"
+    ]
+  },
+  {
+    "subject": "数学",
+    "branch": "初等代数",
+    "chapter": "整式与分式",
+    "order": "121",
+    "summary": "连接多项式系数、基本对称量与根的幂和，推导低阶校正项和高阶递推。",
+    "id": "a-newton-identities",
+    "title": "牛顿恒等式与多元幂和",
+    "category": "知识",
+    "links": [
+      "a-roots-vieta",
+      "a-symmetric",
+      "a-generating-functions",
+      "a-linear-recurrences"
     ]
   },
   {
@@ -3124,6 +3233,9 @@
     "title": "周期函数与最小正周期",
     "category": "知识",
     "links": [
+      "fd-period-group",
+      "fd-periodic-continuity",
+      "fd-periodic-common",
       "a-parity-periodicity",
       "a-trigonometry",
       "fd-affine-period"
@@ -3163,6 +3275,24 @@
   {
     "subject": "数学",
     "branch": "初等代数",
+    "chapter": "整式与分式",
+    "order": "91",
+    "summary": "把带余除法组织为代数运算，证明逆元判据，并区分相同零点与重根信息。",
+    "id": "a-polynomial-congruences",
+    "title": "多项式同余与模多项式计算",
+    "category": "知识",
+    "links": [
+      "a-division",
+      "a-polynomial-interpolation",
+      "a-congruences",
+      "a-crt",
+      "a-complex",
+      "a-divisibility"
+    ]
+  },
+  {
+    "subject": "数学",
+    "branch": "初等代数",
     "chapter": "方程与方程组",
     "order": "180",
     "summary": "因式分解、双二次换元、有理根及倒数型方程。",
@@ -3173,6 +3303,23 @@
       "a-factorization",
       "a-divisibility",
       "a-root-distribution"
+    ]
+  },
+  {
+    "subject": "数学",
+    "branch": "初等代数",
+    "chapter": "整式与分式",
+    "order": "92",
+    "summary": "从根数上界得到插值唯一性，用基函数构造答案，并解释次数约束不可省略。",
+    "id": "a-polynomial-interpolation",
+    "title": "拉格朗日插值与有限数据的唯一性",
+    "category": "知识",
+    "links": [
+      "a-division",
+      "a-finite-differences",
+      "a-polynomial-congruences",
+      "a-linear-systems",
+      "a-polynomial"
     ]
   },
   {
@@ -3202,6 +3349,22 @@
     "links": [
       "a-radicals",
       "a-exponential"
+    ]
+  },
+  {
+    "subject": "数学",
+    "branch": "初等代数",
+    "chapter": "复数与整除",
+    "order": "521",
+    "summary": "从贝祖消去律证明算术基本定理，以素数指数计算最大公因数、最小公倍数与整除性。",
+    "id": "a-prime-factorization",
+    "title": "素因数分解与赋值",
+    "category": "知识",
+    "links": [
+      "a-divisibility",
+      "a-congruences",
+      "a-crt",
+      "a-induction"
     ]
   },
   {
@@ -3365,14 +3528,15 @@
     "branch": "初等代数",
     "chapter": "数列与递推",
     "order": "460",
-    "summary": "初值、平移为等比数列，以及二阶常系数递推。",
+    "summary": "固定点平移、一阶递推的完整分类及稳定性；二阶递推独立成篇。",
     "id": "a-recurrence",
-    "title": "递推数列与线性递推",
+    "title": "一阶仿射递推与固定点",
     "category": "知识",
     "links": [
       "a-sequences",
       "a-geometric",
-      "a-quadratic"
+      "a-linear-recurrences",
+      "a-generating-functions"
     ]
   },
   {
@@ -3454,13 +3618,17 @@
     "branch": "初等代数",
     "chapter": "整式与分式",
     "order": "120",
-    "summary": "以和与积表示对称式；幂和递推及换元。",
+    "summary": "证明二元对称多项式的表示与唯一性，说明交换对称、幂和递推和实数可实现区域。",
     "id": "a-symmetric",
-    "title": "二元对称多项式",
+    "title": "二元对称多项式与和积坐标",
     "category": "知识",
     "links": [
+      "a-division",
       "a-roots-vieta",
-      "a-nonlinear-systems"
+      "a-newton-identities",
+      "a-nonlinear-systems",
+      "a-polynomial",
+      "a-quadratic"
     ]
   },
   {
@@ -3562,7 +3730,10 @@
     "links": [
       "cb-a-ellipse-diameter-midpoint",
       "cb-a-line-ellipse-algebra",
-      "cb-a-four-points"
+      "cb-a-four-points",
+      "cb-c-affine-invariants",
+      "cb-c-polarization",
+      "cb-c-principal-axes"
     ]
   },
   {
@@ -3578,7 +3749,9 @@
     "links": [
       "cb-a-ellipse-locus",
       "cb-a-conjugate-diameters",
-      "cb-a-line-ellipse-algebra"
+      "cb-a-line-ellipse-algebra",
+      "cb-c-polarization",
+      "cb-c-affine-invariants"
     ]
   },
   {
@@ -3689,7 +3862,9 @@
     "links": [
       "cb-a-ellipse-diameter-midpoint",
       "cb-a-focal-chords",
-      "cb-a-four-points"
+      "cb-a-four-points",
+      "cb-c-affine-invariants",
+      "cb-c-polarization"
     ]
   },
   {
@@ -3756,6 +3931,23 @@
     "subject": "数学",
     "branch": "解析几何",
     "chapter": "射影、帕斯卡与对合",
+    "level": "高中进阶与大学基础",
+    "order": "691",
+    "summary": "用二阶行列式定义交比，证明其不变性，并处理无穷远与调和分点。",
+    "id": "cb-b-crossratio",
+    "title": "射影直线的交比与分式线性变换",
+    "category": "知识",
+    "links": [
+      "cb-b-homogeneous-coordinates",
+      "cb-b-harmonic-polar",
+      "cb-b-projectivity",
+      "cb-b-involutions"
+    ]
+  },
+  {
+    "subject": "数学",
+    "branch": "解析几何",
+    "chapter": "射影、帕斯卡与对合",
     "order": "705",
     "summary": "分离直径圆轨迹的平凡分支，并用极性证明两个中心对合何时交换。",
     "id": "cb-b-diameter-commuting",
@@ -3814,6 +4006,24 @@
     "subject": "数学",
     "branch": "解析几何",
     "chapter": "射影、帕斯卡与对合",
+    "level": "高中进阶与大学基础",
+    "order": "690",
+    "summary": "把平行线求交和坐标图失效统一为齐次线性代数。",
+    "id": "cb-b-homogeneous-coordinates",
+    "title": "齐次坐标、无穷远点与直线求交",
+    "category": "知识",
+    "links": [
+      "cb-b-crossratio",
+      "cb-b-projectivity",
+      "cb-c-polar-dual",
+      "cb-c-affine-invariants",
+      "g-vectors"
+    ]
+  },
+  {
+    "subject": "数学",
+    "branch": "解析几何",
+    "chapter": "射影、帕斯卡与对合",
     "order": "704",
     "summary": "以迹为零的分式线性映射刻画非恒等对合，并给出弦共点的逆命题。",
     "id": "cb-b-involutions",
@@ -3852,7 +4062,9 @@
     "links": [
       "cb-b-harmonic-polar",
       "cb-b-pascal",
-      "cb-b-involutions"
+      "cb-b-involutions",
+      "cb-b-homogeneous-coordinates",
+      "cb-b-crossratio"
     ]
   },
   {
@@ -3875,6 +4087,39 @@
     "branch": "解析几何",
     "chapter": "二次曲线与一般理论",
     "level": "高中进阶与大学基础",
+    "order": "790",
+    "summary": "由可逆线性变换和平移说明哪些几何量保持，哪些度量量改变。",
+    "id": "cb-c-affine-invariants",
+    "title": "仿射变换与平行、中点和面积比",
+    "category": "知识",
+    "links": [
+      "g-vectors",
+      "cb-c-barycentric",
+      "cb-a-conjugate-diameters",
+      "cb-c-principal-axes"
+    ]
+  },
+  {
+    "subject": "数学",
+    "branch": "解析几何",
+    "chapter": "二次曲线与一般理论",
+    "level": "高中进阶与大学基础",
+    "order": "793",
+    "summary": "由唯一仿射表示推导面积坐标、内外点判别以及三角形内的线性插值。",
+    "id": "cb-c-barycentric",
+    "title": "三角形的重心坐标与有向面积",
+    "category": "知识",
+    "links": [
+      "cb-c-affine-invariants",
+      "cb-b-homogeneous-coordinates",
+      "g-vectors"
+    ]
+  },
+  {
+    "subject": "数学",
+    "branch": "解析几何",
+    "chapter": "二次曲线与一般理论",
+    "level": "高中进阶与大学基础",
     "order": "801",
     "summary": "用二次型的秩、符号和齐次矩阵行列式判定椭圆、双曲线、抛物线及全部实退化情形。",
     "id": "cb-c-classification",
@@ -3883,7 +4128,27 @@
     "links": [
       "cb-c-polar-dual",
       "cb-c-intersections-pencil",
-      "g-conics"
+      "g-conics",
+      "cb-c-principal-axes",
+      "cb-c-conic-center",
+      "cb-b-homogeneous-coordinates"
+    ]
+  },
+  {
+    "subject": "数学",
+    "branch": "解析几何",
+    "chapter": "二次曲线与一般理论",
+    "level": "高中进阶与大学基础",
+    "order": "794",
+    "summary": "以线性方程区分唯一中心、中心直线和无中心，并严格推出配方公式。",
+    "id": "cb-c-conic-center",
+    "title": "二次曲线的中心与一次项消去",
+    "category": "知识",
+    "links": [
+      "cb-c-principal-axes",
+      "cb-c-classification",
+      "cb-c-affine-invariants",
+      "cb-c-polar-dual"
     ]
   },
   {
@@ -3980,7 +4245,45 @@
       "cb-c-classification",
       "cb-c-intersections-pencil",
       "cb-c-hyperbola-chords",
-      "cb-c-parabola-tangents"
+      "cb-c-parabola-tangents",
+      "cb-c-polarization",
+      "cb-b-homogeneous-coordinates"
+    ]
+  },
+  {
+    "subject": "数学",
+    "branch": "解析几何",
+    "chapter": "二次曲线与一般理论",
+    "level": "高中进阶与大学基础",
+    "order": "791",
+    "summary": "从平方和展开得到双线性型，并统一点差法、共轭方向及切线。",
+    "id": "cb-c-polarization",
+    "title": "二次型的极化与双线性正交",
+    "category": "知识",
+    "links": [
+      "cb-c-principal-axes",
+      "cb-a-ellipse-diameter-midpoint",
+      "cb-a-conjugate-diameters",
+      "cb-c-polar-dual",
+      "g-vectors"
+    ]
+  },
+  {
+    "subject": "数学",
+    "branch": "解析几何",
+    "chapter": "二次曲线与一般理论",
+    "level": "高中进阶与大学基础",
+    "order": "792",
+    "summary": "证明实对称二阶矩阵能正交对角化，并把混合项消去落实为特征方向。",
+    "id": "cb-c-principal-axes",
+    "title": "二维谱定理与二次曲线主轴",
+    "category": "知识",
+    "links": [
+      "cb-c-polarization",
+      "cb-c-conic-center",
+      "cb-c-classification",
+      "cb-c-affine-invariants",
+      "g-vectors"
     ]
   },
   {
@@ -4525,14 +4828,15 @@
     "chapter": "暂态、交流与电路应用",
     "level": "普通物理",
     "order": "750",
-    "summary": "由电路方程得到增益与相位，说明积分、微分近似及负载条件。",
+    "summary": "从电容电流推导传递函数，完整计算单频响应并检查近似条件。",
     "id": "em-filter",
-    "title": "传递函数、RC 滤波与 Bode 图",
+    "title": "RC 滤波：频率响应、相位与负载",
     "category": "知识",
     "links": [
+      "em-rc",
       "em-laplace",
-      "em-phasor",
-      "em-bridge"
+      "m-linear-response",
+      "m-superposition"
     ]
   },
   {
@@ -4650,14 +4954,16 @@
     "chapter": "暂态、交流与电路应用",
     "level": "普通物理",
     "order": "751",
-    "summary": "把开关问题写成带初值的代数方程，连接暂态和频率响应。",
+    "summary": "保留开关前初值，分清零输入与零状态响应并检验终值条件。",
     "id": "em-laplace",
-    "title": "拉普拉斯方法、初始储能与极点",
+    "title": "拉普拉斯变换、初始储能与极点",
     "category": "知识",
     "links": [
       "em-rc",
       "em-rlc",
-      "em-filter"
+      "em-filter",
+      "m-linear-response",
+      "m-energy-stability"
     ]
   },
   {
@@ -5535,6 +5841,261 @@
   {
     "subject": "数学",
     "branch": "函数与导数",
+    "chapter": "周期、对称与频谱",
+    "order": "1000",
+    "level": "高中拓展与大学基础",
+    "summary": "把逐个寻找周期转化为研究全部允许平移的代数结构。",
+    "id": "fd-period-group",
+    "title": "周期集合与实数的加法子群",
+    "category": "知识",
+    "links": [
+      "a-periodic-functions",
+      "fd-periodic-continuity",
+      "k-sets"
+    ]
+  },
+  {
+    "subject": "数学",
+    "branch": "函数与导数",
+    "chapter": "周期、对称与频谱",
+    "order": "1120",
+    "level": "高中拓展与大学基础",
+    "summary": "将“平移后变号”作为独立的对称关系，解释平方与乘积的周期缩短。",
+    "id": "fd-periodic-antiperiod",
+    "title": "反周期、符号翻转与周期群的陪集",
+    "category": "知识",
+    "links": [
+      "fd-period-group",
+      "fd-periodic-sine-product",
+      "fd-abstract-symmetry",
+      "fd-periodic-continuity"
+    ]
+  },
+  {
+    "subject": "数学",
+    "branch": "函数与导数",
+    "chapter": "周期、对称与频谱",
+    "order": "1130",
+    "level": "高中拓展与大学基础",
+    "summary": "求导保持已知周期，积分是否保持周期则取决于一个周期的平均值。",
+    "id": "fd-periodic-calculus",
+    "title": "周期函数的导数、原函数与平均值",
+    "category": "知识",
+    "links": [
+      "k-integral",
+      "fd-affine-period",
+      "fd-periodic-continuity"
+    ]
+  },
+  {
+    "subject": "数学",
+    "branch": "函数与导数",
+    "chapter": "周期、对称与频谱",
+    "order": "1020",
+    "level": "高中拓展与大学基础",
+    "summary": "区分输入函数的公共周期与运算结果可能更短的最小周期。",
+    "id": "fd-periodic-common",
+    "title": "公度周期、公共周期与最小公倍数",
+    "category": "知识",
+    "links": [
+      "fd-periodic-continuity",
+      "fd-periodic-sums",
+      "fd-periodic-trigonometric",
+      "a-divisibility"
+    ]
+  },
+  {
+    "subject": "数学",
+    "branch": "函数与导数",
+    "chapter": "周期、对称与频谱",
+    "order": "1010",
+    "level": "高中拓展与大学基础",
+    "summary": "把连续性转化为周期集合的闭性，补全最小正周期存在性的证明。",
+    "id": "fd-periodic-continuity",
+    "title": "连续周期函数的最小正周期",
+    "category": "知识",
+    "links": [
+      "fd-period-group",
+      "fd-periodic-common",
+      "k-limits"
+    ]
+  },
+  {
+    "subject": "数学",
+    "branch": "函数与导数",
+    "chapter": "周期、对称与频谱",
+    "order": "1110",
+    "level": "高中拓展与大学基础",
+    "summary": "整数采样后先按模 2π 合并频率，再用单位根的阶求整数周期。",
+    "id": "fd-periodic-discrete",
+    "title": "离散序列的周期、混叠与单位根",
+    "category": "知识",
+    "links": [
+      "fd-periodic-spectrum",
+      "fd-periodic-trigonometric",
+      "a-complex-polar",
+      "a-congruences",
+      "em-filter"
+    ]
+  },
+  {
+    "subject": "数学",
+    "branch": "函数与导数",
+    "chapter": "周期、对称与频谱",
+    "order": "1040",
+    "level": "高中拓展与大学基础",
+    "summary": "说明多项叠加为何必须排除恒定子和，并给出完整的归纳论证。",
+    "id": "fd-periodic-finite-sums",
+    "title": "有限个周期函数的和与子和消去",
+    "category": "知识",
+    "links": [
+      "fd-periodic-sums",
+      "fd-periodic-spectrum",
+      "fd-periodic-trigonometric",
+      "a-induction"
+    ]
+  },
+  {
+    "subject": "数学",
+    "branch": "函数与导数",
+    "chapter": "周期、对称与频谱",
+    "order": "1070",
+    "level": "高中拓展与大学基础",
+    "summary": "用作用于函数空间的插值多项式，抽取一个指定频率。",
+    "id": "fd-periodic-operators",
+    "title": "微分算子的分量投影与多项式插值",
+    "category": "知识",
+    "links": [
+      "fd-periodic-spectrum",
+      "a-polynomial-interpolation",
+      "a-polynomial-congruences",
+      "a-crt",
+      "fd-periodic-trigonometric",
+      "k-eigen"
+    ]
+  },
+  {
+    "subject": "数学",
+    "branch": "函数与导数",
+    "chapter": "周期、对称与频谱",
+    "order": "1050",
+    "level": "高中拓展与大学基础",
+    "summary": "用非零集合的平移不变性处理对数方法遗漏的零点。",
+    "id": "fd-periodic-products",
+    "title": "连续周期函数的积与商：零点和定义域",
+    "category": "知识",
+    "links": [
+      "fd-period-group",
+      "fd-periodic-sums",
+      "fd-periodic-sine-quotient"
+    ]
+  },
+  {
+    "subject": "数学",
+    "branch": "函数与导数",
+    "chapter": "周期、对称与频谱",
+    "order": "1140",
+    "level": "高中拓展与大学基础",
+    "summary": "用抽屉原理说明非周期信号为何仍可能在长时间后近似重现。",
+    "id": "fd-periodic-recurrence",
+    "title": "不可公度频率的近似回归",
+    "category": "知识",
+    "links": [
+      "fd-periodic-sums",
+      "fd-periodic-trigonometric",
+      "m-beats",
+      "a-counting"
+    ]
+  },
+  {
+    "subject": "数学",
+    "branch": "函数与导数",
+    "chapter": "周期、对称与频谱",
+    "order": "1090",
+    "level": "高中拓展与大学基础",
+    "summary": "积化和差产生新频率，奇偶性决定公共周期是否减半。",
+    "id": "fd-periodic-sine-product",
+    "title": "两个不同频率正弦之积的周期",
+    "category": "知识",
+    "links": [
+      "fd-periodic-trigonometric",
+      "fd-periodic-antiperiod",
+      "fd-periodic-sine-quotient",
+      "a-trigonometry"
+    ]
+  },
+  {
+    "subject": "数学",
+    "branch": "函数与导数",
+    "chapter": "周期、对称与频谱",
+    "order": "1100",
+    "level": "高中拓展与大学基础",
+    "summary": "先约束分母零点格，再检查平移后的符号一致性。",
+    "id": "fd-periodic-sine-quotient",
+    "title": "两个不同频率正弦之商的周期",
+    "category": "知识",
+    "links": [
+      "fd-periodic-products",
+      "fd-periodic-sine-product",
+      "fd-periodic-common",
+      "fd-periodic-trigonometric"
+    ]
+  },
+  {
+    "subject": "数学",
+    "branch": "函数与导数",
+    "chapter": "周期、对称与频谱",
+    "order": "1060",
+    "level": "高中拓展与大学基础",
+    "summary": "由一个消去算子逐一恢复系数，证明不同频率不能暗中抵消。",
+    "id": "fd-periodic-spectrum",
+    "title": "有限指数族的线性无关与频谱唯一性",
+    "category": "知识",
+    "links": [
+      "fd-periodic-operators",
+      "fd-periodic-trigonometric",
+      "k-eigen",
+      "a-complex-polar",
+      "k-derivative"
+    ]
+  },
+  {
+    "subject": "数学",
+    "branch": "函数与导数",
+    "chapter": "周期、对称与频谱",
+    "order": "1030",
+    "level": "高中拓展与大学基础",
+    "summary": "通过平移差分证明公度性的必要性，而不只验证一个候选周期。",
+    "id": "fd-periodic-sums",
+    "title": "两个连续周期函数之和的周期判据",
+    "category": "知识",
+    "links": [
+      "fd-periodic-continuity",
+      "fd-periodic-common",
+      "fd-periodic-finite-sums",
+      "fd-periodic-recurrence"
+    ]
+  },
+  {
+    "subject": "数学",
+    "branch": "函数与导数",
+    "chapter": "周期、对称与频谱",
+    "order": "1080",
+    "level": "高中拓展与大学基础",
+    "summary": "从有效频谱得出充要条件，再用整数最大公因数确定最小性。",
+    "id": "fd-periodic-trigonometric",
+    "title": "三角多项式与有限复指数和的最小周期",
+    "category": "知识",
+    "links": [
+      "fd-periodic-spectrum",
+      "fd-periodic-operators",
+      "fd-periodic-common",
+      "a-divisibility"
+    ]
+  },
+  {
+    "subject": "数学",
+    "branch": "函数与导数",
     "chapter": "积分、参数与不等式",
     "level": "高中进阶与大学基础",
     "order": "310",
@@ -6359,6 +6920,23 @@
   {
     "subject": "物理",
     "branch": "普通力学",
+    "chapter": "振动",
+    "level": "普通物理",
+    "order": "581",
+    "summary": "区分守恒、Lyapunov 稳定、渐近稳定与零模漂移。",
+    "id": "m-energy-stability",
+    "title": "正定能量与平衡稳定性",
+    "category": "知识",
+    "links": [
+      "m-normal-modes",
+      "m-rayleigh-quotient",
+      "em-laplace",
+      "t-static-response"
+    ]
+  },
+  {
+    "subject": "物理",
+    "branch": "普通力学",
     "chapter": "质点系与守恒律",
     "level": "普通物理",
     "order": "200",
@@ -6473,14 +7051,17 @@
     "chapter": "波动与声学",
     "level": "普通物理",
     "order": "640",
-    "summary": "由正交投影确定各个模式的实际振幅。",
+    "summary": "逐项求系数与能量，说明完备性、收敛和有限截断的区别。",
     "id": "m-fourier-waves",
-    "title": "傅里叶展开、频谱与初值问题",
+    "title": "傅里叶模态展开与弦的初值问题",
     "category": "知识",
     "links": [
-      "k-integral",
+      "fd-periodic-discrete",
       "m-standing-waves",
-      "m-dispersion"
+      "m-sturm-liouville",
+      "m-rayleigh-quotient",
+      "op-fourier",
+      "k-integral"
     ]
   },
   {
@@ -6513,6 +7094,23 @@
       "m-hydrostatics",
       "m-kepler",
       "e-gauss"
+    ]
+  },
+  {
+    "subject": "物理",
+    "branch": "普通力学",
+    "chapter": "波动与声学",
+    "level": "普通物理",
+    "order": "632",
+    "summary": "用固定端受力弦推导导数跳跃、叠加公式和零模障碍。",
+    "id": "m-green-functions",
+    "title": "Green 函数：边值问题的单位源响应",
+    "category": "知识",
+    "links": [
+      "m-wave-equation",
+      "m-sturm-liouville",
+      "m-linear-response",
+      "m-standing-waves"
     ]
   },
   {
@@ -6676,6 +7274,24 @@
     "branch": "普通力学",
     "chapter": "振动",
     "level": "普通物理",
+    "order": "541",
+    "summary": "从脉冲叠加推导卷积，并区分初值、稳定性与稳态频谱。",
+    "id": "m-linear-response",
+    "title": "因果线性响应与卷积",
+    "category": "知识",
+    "links": [
+      "fd-periodic-discrete",
+      "m-driven",
+      "em-laplace",
+      "em-filter",
+      "m-green-functions"
+    ]
+  },
+  {
+    "subject": "物理",
+    "branch": "普通力学",
+    "chapter": "振动",
+    "level": "普通物理",
     "order": "500",
     "summary": "说明简谐近似从何而来，以及哪些稳定系统不满足它。",
     "id": "m-linearization",
@@ -6741,14 +7357,17 @@
     "chapter": "振动",
     "level": "普通物理",
     "order": "580",
-    "summary": "将多自由度小振动化为互不耦合的模态。",
+    "summary": "从二次能量构造模态基底，并由初值求各模式的激发。",
     "id": "m-normal-modes",
-    "title": "耦合振动、简正模式与广义特征值",
+    "title": "耦合振动、质量内积与简正模式",
     "category": "知识",
     "links": [
       "k-eigen",
-      "m-standing-waves",
-      "m-lagrange-stability"
+      "m-energy-stability",
+      "m-rayleigh-quotient",
+      "m-sturm-liouville",
+      "a-periodic-functions",
+      "m-sho"
     ]
   },
   {
@@ -6860,6 +7479,23 @@
       "m-equilibrium",
       "m-energy-system",
       "k-integral"
+    ]
+  },
+  {
+    "subject": "物理",
+    "branch": "普通力学",
+    "chapter": "振动",
+    "level": "普通物理",
+    "order": "582",
+    "summary": "以模态展开证明最低频率上界，说明试探函数和边界条件的作用。",
+    "id": "m-rayleigh-quotient",
+    "title": "Rayleigh 比值与固有频率的变分估计",
+    "category": "知识",
+    "links": [
+      "m-normal-modes",
+      "m-sturm-liouville",
+      "m-energy-stability",
+      "m-fourier-waves"
     ]
   },
   {
@@ -7042,13 +7678,14 @@
     "chapter": "波动与声学",
     "level": "普通物理",
     "order": "630",
-    "summary": "把连续系统的简正模式理解为边值问题。",
+    "summary": "从分离变量推导整数谱和半整数谱，并区分局部能流与平均能流。",
     "id": "m-standing-waves",
-    "title": "驻波、边界条件与本征频率",
+    "title": "驻波：边界条件与本征频率",
     "category": "知识",
     "links": [
-      "m-normal-modes",
+      "m-wave-equation",
       "m-fourier-waves",
+      "m-sturm-liouville",
       "m-sound"
     ]
   },
@@ -7066,6 +7703,23 @@
       "m-forces",
       "m-equilibrium",
       "m-metacenter"
+    ]
+  },
+  {
+    "subject": "物理",
+    "branch": "普通力学",
+    "chapter": "波动与声学",
+    "level": "普通物理",
+    "order": "631",
+    "summary": "从弦的非均匀密度得到权内积，证明正交性并检查边界项。",
+    "id": "m-sturm-liouville",
+    "title": "Sturm–Liouville 模态、权内积与边界条件",
+    "category": "知识",
+    "links": [
+      "m-normal-modes",
+      "m-standing-waves",
+      "m-rayleigh-quotient",
+      "m-green-functions"
     ]
   },
   {
@@ -7533,14 +8187,16 @@
     "chapter": "衍射、分辨率与傅里叶光学",
     "level": "普通物理",
     "order": "250",
-    "summary": "把远场与焦平面解释为频谱，区分相干和非相干成像。",
+    "summary": "从衍射核导出空间频谱，并分别推导相干场和非相干强度传递。",
     "id": "op-fourier",
-    "title": "傅里叶光学、空间频率与成像传递",
+    "title": "傅里叶光学：空间频率与成像传递",
     "category": "知识",
     "links": [
       "op-huygens",
       "op-aperture",
-      "m-fourier-waves"
+      "m-fourier-waves",
+      "m-linear-response",
+      "fd-periodic-discrete"
     ]
   },
   {
@@ -8343,14 +8999,16 @@
     "chapter": "统计基础与量子热现象",
     "level": "普通物理",
     "order": "610",
-    "summary": "用统计方差检验热力学稳定性。",
+    "summary": "完整推导能量和粒子数方差，解释宏观确定性的相关性前提。",
     "id": "t-fluctuations",
-    "title": "热涨落、响应函数与宏观确定性",
+    "title": "热涨落：系综、响应与宏观极限",
     "category": "知识",
     "links": [
       "k-statistical",
       "t-grand-canonical",
-      "t-vdw-critical"
+      "t-static-response",
+      "t-vdw-critical",
+      "t-euler-gibbs-duhem"
     ]
   },
   {
@@ -8832,6 +9490,23 @@
       "t-temperature",
       "k-thermo",
       "t-phase"
+    ]
+  },
+  {
+    "subject": "物理",
+    "branch": "热力学与统计物理",
+    "chapter": "统计基础与量子热现象",
+    "level": "普通物理",
+    "order": "611",
+    "summary": "由正则分布直接微分，连接柔度、热涨落与稳定性。",
+    "id": "t-static-response",
+    "title": "静态涨落—响应关系与协方差矩阵",
+    "category": "知识",
+    "links": [
+      "t-fluctuations",
+      "k-statistical",
+      "m-energy-stability",
+      "m-linear-response"
     ]
   },
   {

@@ -155,3 +155,25 @@ a.collection-banner p{color:#526571}
   font-size: .84rem;
   line-height: 1.6;
 }
+/* Reading routes make conceptual dependencies explicit without interrupting proofs. */
+.pathway-entries{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:24px 0 34px}
+.pathway-entries>a{display:flex;flex-direction:column;gap:10px;padding:24px;border:1px solid #d7e4ea;border-top:3px solid #83bed8;background:#f8fcfe;text-decoration:none;color:#264858;min-width:0}
+.pathway-entries>a:nth-child(2){background:#fffdf4;border-top-color:#e9c86a}
+.pathway-entries strong{font-size:1.45rem;line-height:1.5}
+.pathway-entries p{margin:0;color:#627a87;line-height:1.7}
+.pathway-entries>a>span:last-child{margin-top:auto;font-size:.88rem;color:#286987}
+.prerequisite-strip{margin:0 0 30px;padding:15px 0;border-top:1px solid #dae7ec;border-bottom:1px solid #dae7ec;font-size:.85rem;line-height:1.9}
+.prerequisite-strip>div{display:flex;flex-wrap:wrap;align-items:baseline;gap:3px 13px}
+.prerequisite-strip>div>span{color:#71858f;min-width:4em}
+.prerequisite-strip a{color:#176a8b;text-decoration:none}
+.prerequisite-strip a:hover{text-decoration:underline}
+.reading-intro{padding:20px 24px;background:#f4fbfd;border-left:3px solid #9ed9ef;line-height:1.9;margin-bottom:28px}
+.reading-intro p{margin:0 0 12px}
+.learning-route{padding:20px 0 32px;border-bottom:1px solid #dbe6ec;scroll-margin-top:100px}
+.learning-route h2{color:#21576f;font-size:1.75rem}
+.route-goal{color:#617883;line-height:1.9}
+.route-stage{margin:28px 0}
+.route-stage h3{display:flex;gap:12px;align-items:baseline;color:#2b4b5d;font-size:1.2rem}
+.route-stage h3>span{font-family:var(--font-mono,monospace);font-size:.82rem;color:#859eac}
+.route-stage>p{line-height:1.9;color:#657e8c}
+@media(max-width:700px){.pathway-entries{grid-template-columns:1fr;gap:12px}.pathway-entries>a{padding:18px}.pathway-entries strong{font-size:1.2rem}.prerequisite-strip>div{gap:4px 10px}.learning-route h2{font-size:1.45rem}.reading-intro{padding:16px}.route-stage h3{font-size:1.12rem}}
