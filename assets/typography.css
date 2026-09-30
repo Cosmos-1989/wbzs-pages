@@ -1,0 +1,97 @@
+/* Textbook typography: STIX Latin, locally installed Song typeface for Chinese. */
+@font-face{font-family:WuzhiSTIX;src:url('./fonts/STIXGeneral.woff2') format('woff2');font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:WuzhiSTIX;src:url('./fonts/STIXGeneralBol.woff2') format('woff2');font-style:normal;font-weight:700;font-display:swap}
+@font-face{font-family:WuzhiSTIX;src:url('./fonts/STIXGeneralItalic.woff2') format('woff2');font-style:italic;font-weight:400;font-display:swap}
+@font-face{font-family:WuzhiSTIX;src:url('./fonts/STIXGeneralBolIta.woff2') format('woff2');font-style:italic;font-weight:700;font-display:swap}
+@font-face{font-family:WuzhiSongSC;src:url('./fonts/WuzhiSongSC-Regular.woff2') format('woff2');font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:WuzhiSongSC;src:url('./fonts/WuzhiSongSC-Bold.woff2') format('woff2');font-style:normal;font-weight:700;font-display:swap}
+:root{--font:WuzhiSTIX,"Songti SC","STSong","SimSun",WuzhiSongSC,"Noto Serif CJK SC","Source Han Serif SC",serif;--ink:#171b1d;--muted:#5a6268;--blue:#086b91;--line:#e1e5e7}
+body{font-family:var(--font);font-size:17px;-webkit-font-smoothing:auto}
+h1,h2,h3,h4,h5{font-family:var(--font);font-weight:700;letter-spacing:0}
+.brand{font-weight:700;font-size:24px}.primary-nav{font-size:16px}.hero h1{font-weight:700;letter-spacing:.04em}.hero-copy>p{font-size:20px;color:#333e44}.eyebrow{letter-spacing:.06em;color:#536774}.entry h2,.section-heading h2,.subject-title h2{color:var(--blue);font-weight:700}.entry p{font-size:15px;color:#505d66}.topic-intro>p{font-size:26px}.topic-intro>span{font-size:16px;color:#405562}.topic-meta,.topic-intro>a{font-size:13px}.problem-preview strong{font-size:16px}.table-caption{font-size:13px}.title-cell>a{font-size:17px}.title-cell>div{font-size:12px}.small-topic,.exam-row-number{font-size:12px}.problem-table th{font-size:14px}.classification-cell{font-size:13px}.mono,.level-number,.diagram-caption,.entry-top>span,.hero-caption span{font-family:var(--font)}.mono{font-size:13px}.problem-table td{padding-block:20px}.collection-banner h2{font-weight:700;color:var(--blue)}.collection-banner p{font-size:15px}.page-heading>p{font-size:17px;color:#53616b}.page-heading h1{letter-spacing:0;font-weight:700}.branch-card h3{font-size:18px;color:var(--blue)}.branch-card>a{font-size:15px}.curriculum-list strong{font-size:18px}.curriculum-list span{font-size:14px;color:#53616b}.chapter-nav{font-size:16px}.news-list .news-row h3{font-weight:700;color:var(--blue)}.news-list>div>p{font-size:15px}.stats>div>span{font-size:13px}
+.reading-layout{grid-template-columns:205px minmax(0,770px) 175px;gap:36px;max-width:1390px}.article{padding-top:36px}.article-header h1{font-size:36px;line-height:1.6;font-weight:700;letter-spacing:0}.article-header .lead{font-size:17px;color:#4c5961;line-height:1.9}.article-header .eyebrow{font-size:12px}.breadcrumbs{font-size:12px}.prose{font-family:var(--font);font-size:19px;line-height:1.9;color:#171b1d}.prose p{font-family:var(--font);line-height:1.9;margin:0 0 1.1em;text-align:justify;overflow-wrap:break-word}.prose h2{font-size:26px;line-height:1.6;margin:0 0 20px;color:var(--blue);font-weight:700}.prose h3{font-size:23px;line-height:1.65;margin:32px 0 18px;color:var(--blue);font-weight:700}.prose h4{font-size:21px;line-height:1.7;color:var(--blue);font-weight:700}.prose li{line-height:1.95;margin:12px 0;padding-left:5px}.prose ul,.prose ol{padding-left:1.65em}.article-section{margin:38px 0}.prose .article-section .article-section{margin:32px 0}.prose .definition,.prose .theorem{background:transparent;border:0;border-radius:0;padding:0}.prose .definition h2,.prose .theorem h2{font-size:26px;letter-spacing:0}.proof>h2:after{display:none}.prose .notice{background:transparent;border:0;border-left:2px solid #bbc8cf;border-radius:0;padding:4px 0 4px 22px;color:#303e48;font-size:18px}.prose .notice h2{font-size:24px;color:var(--blue)}.article .katex{font-size:1.02em}.math-wrap{vertical-align:middle;line-height:1.5;padding:2px 0}.numbered-equation{margin:24px 0;gap:12px}.equation-math{padding:9px 2px}.equation-number{font-family:var(--font);font-size:15px;color:#344751!important;border-bottom:0!important}.solution{border:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);border-radius:0;margin:40px 0}.solution>summary{background:white;border-radius:0;padding:22px 0;font-size:26px;font-weight:700;color:var(--blue)}.solution[open]>summary{background:white;border-radius:0;border-bottom:1px solid var(--line)}.solution-hint{font-size:13px;color:#637580;font-weight:400}.solution-body{padding:4px 0 18px}.solution-body>.article-section{border-bottom:0;padding-bottom:0}.problem-figure{border:0;border-radius:0;padding:12px 0;margin:30px 0;background:white}.problem-figure img{max-width:100%;width:100%}.problem-figure figcaption{font-family:var(--font);font-size:15px;line-height:1.8;color:#344751;letter-spacing:0;padding-top:14px}.article-rail{font-size:13px;padding-left:16px}.article-rail>nav{font-size:13px;color:#506673}.article-rail .toc-sub{font-size:12px}.topic-side-title{font-size:20px;color:var(--blue)}.side-problem-list>a{font-size:13px;color:#4c606d}.side-problem-list>a span{font-family:var(--font);font-size:12px}.side-branch>a,.side-chapter>a{font-size:13px;color:#4c606d}.side-chapter>summary{font-size:13px;color:#344751}.side-topic{font-size:14px!important}.tag{font-size:12px}.backlinks h2{font-size:20px;color:var(--blue)}.backlinks a{font-size:14px}.problem-pagination a{font-size:15px}.problem-pagination a>span{font-size:12px}.compact-reading{grid-template-columns:minmax(0,770px) 175px;max-width:1080px;gap:50px}.exam-facts{font-size:14px}.exam-question-nav>span{font-size:14px}.exam-question-nav>a{font-size:15px}
+@media(max-width:1100px){.reading-layout{grid-template-columns:180px minmax(0,1fr);gap:28px}.compact-reading{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:760px){.brand{font-size:22px}.primary-nav a{font-size:15px}.reading-layout{display:block;padding-inline:20px}.article-header h1{font-size:29px;line-height:1.65}.article-header .lead{font-size:16px}.article-header .eyebrow{font-size:11px}.prose{font-size:18px;line-height:1.95}.prose p{line-height:1.95;text-align:left}.prose h2,.prose .definition h2,.prose .theorem h2{font-size:24px}.prose h3{font-size:21px}.prose h4{font-size:19px}.prose .notice{font-size:17px;padding-left:15px}.article .katex{font-size:1em}.numbered-equation{gap:6px;margin:22px 0}.equation-number{font-size:12px}.equation-math .katex-display{font-size:1em}.solution-body{padding:0}.solution>summary{font-size:24px;padding:18px 0}.solution-hint{font-size:12px}.problem-figure{padding:8px 0}.problem-figure figcaption{font-size:14px}.table-caption{font-size:12px}.title-cell>a{font-size:15px}.small-topic,.exam-row-number{font-size:11px}.problem-table .mono{font-size:11px}.problem-table td:nth-child(4){width:65px}.problem-table td{padding-inline:5px}.problem-table .difficulty{font-size:10px}.level-number{display:none}.page-heading>p{font-size:16px}.page-heading h1{font-size:31px;line-height:1.5}.collection-banner h2{font-size:24px;line-height:1.6}.collection-banner p{font-size:14px}.curriculum-list strong{font-size:18px}.curriculum-list span{font-size:14px}.chapter-nav{font-size:14px}.branch-card h3{font-size:17px}.branch-card>a{font-size:14px}.exam-facts{font-size:13px}.hero h1{font-size:48px}.hero-copy>p{font-size:18px}.entry h2{font-size:23px}.entry p{font-size:14px}.problem-preview strong{font-size:15px}.problem-pagination a{font-size:14px}}
+@media print{.prose{font-size:12pt;line-height:1.8;color:#000}.article-header h1{font-size:25pt}.prose h2,.prose .definition h2,.prose .theorem h2{font-size:17pt}.prose h3{font-size:15pt}.solution-body{padding:0}.problem-figure figcaption{font-size:10pt}.equation-number{font-size:10pt}}
+/* Diagrams retain their scientific aspect ratio without filling every page. */
+.problem-figure>a{display:block;width:min(100%,var(--figure-width,600px));margin-inline:auto;border:0!important}
+.problem-figure img{display:block;width:100%;height:auto;max-height:none;margin:0}
+.problem-figure figcaption{max-width:660px;margin-inline:auto;text-align:left}
+.problem-figure figcaption p{font-size:inherit;line-height:1.8;margin:0;text-align:left}
+.problem-figure figcaption .katex{font-size:1em}
+.difficulty.rating{display:inline-flex;gap:2px;align-items:baseline;white-space:nowrap;font-family:var(--font);color:#086b91;font-size:17px;font-weight:400;font-variant-numeric:tabular-nums}
+.rating-unit{font-size:.8em}.rating-value{font-weight:700}
+.rating-note{font-size:15px;color:#4c5961;margin-top:18px;line-height:1.85;max-width:660px}
+.rating-note summary{cursor:pointer;color:var(--blue);width:fit-content}
+.rating-note p{margin:12px 0}.rating-note a{color:var(--blue)}
+.rating-key{font-size:15px;margin:-12px 0 24px;color:var(--muted)}.rating-key a{color:var(--blue)}
+@media(max-width:760px){.problem-table .difficulty.rating{font-size:15px}.rating-note,.rating-key{font-size:14px}}
+@media print{.problem-figure>a{max-height:none}.rating-note{display:none}}
+
+/* Knowledge articles: quiet semantic panels in the manner of a mathematical text. */
+.reading-layout>.knowledge-sidebar+.article .prose>.article-section.definition,
+.reading-layout>.knowledge-sidebar+.article .prose>.article-section.theorem{
+  position:relative;
+  min-width:0;
+  padding:22px 27px 23px;
+  border:0;
+  border-left:4px solid;
+  border-radius:0;
+  box-shadow:none;
+}
+.reading-layout>.knowledge-sidebar+.article .prose>.article-section.definition{
+  color:#252521;
+  background:#fffaf0;
+  border-left-color:#dfa65a;
+}
+.reading-layout>.knowledge-sidebar+.article .prose>.article-section.theorem{
+  color:#202930;
+  background:#f3faff;
+  border-left-color:#78bce0;
+}
+.reading-layout>.knowledge-sidebar+.article .prose>.article-section.definition>h2,
+.reading-layout>.knowledge-sidebar+.article .prose>.article-section.theorem>h2{
+  margin:0 0 12px;
+  font-size:22px;
+  line-height:1.55;
+  letter-spacing:.015em;
+}
+.reading-layout>.knowledge-sidebar+.article .prose>.article-section.definition>h2{color:#a9561a}
+.reading-layout>.knowledge-sidebar+.article .prose>.article-section.theorem>h2{color:#086b96}
+.reading-layout>.knowledge-sidebar+.article .prose>.article-section.definition>:last-child,
+.reading-layout>.knowledge-sidebar+.article .prose>.article-section.theorem>:last-child{margin-bottom:0}
+.reading-layout>.knowledge-sidebar+.article .prose>.article-section:is(.definition,.theorem) .numbered-equation,
+.reading-layout>.knowledge-sidebar+.article .prose>.article-section:is(.definition,.theorem) .equation-math{
+  min-width:0;
+  max-width:100%;
+  background:transparent;
+}
+.reading-layout>.knowledge-sidebar+.article .prose>.article-section:is(.definition,.theorem) .problem-figure{
+  background:transparent;
+}
+.reading-layout>.knowledge-sidebar+.article .prose>.article-section:is(.definition,.theorem) .problem-figure img{
+  mix-blend-mode:multiply;
+}
+@media(max-width:760px){
+  .reading-layout>.knowledge-sidebar+.article .prose>.article-section:is(.definition,.theorem){
+    margin:31px 0;
+    padding:18px 18px 20px;
+    border-left-width:3px;
+  }
+  .reading-layout>.knowledge-sidebar+.article .prose>.article-section:is(.definition,.theorem)>h2{
+    margin-bottom:9px;
+    font-size:20px;
+    line-height:1.6;
+  }
+}
+@media print{
+  .reading-layout>.knowledge-sidebar+.article .prose>.article-section:is(.definition,.theorem){
+    background:transparent;
+    border-left:1pt solid #777;
+    padding:0 0 0 10pt;
+    break-inside:auto;
+  }
+  .reading-layout>.knowledge-sidebar+.article .prose>.article-section:is(.definition,.theorem)>h2{color:#111}
+  .reading-layout>.knowledge-sidebar+.article .prose>.article-section:is(.definition,.theorem) .equation-math{overflow:visible}
+  .reading-layout>.knowledge-sidebar+.article .prose>.article-section:is(.definition,.theorem) .problem-figure img{mix-blend-mode:normal}
+}

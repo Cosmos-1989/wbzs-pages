@@ -1,0 +1,157 @@
+/* A restrained editorial layer shared by the index, problem sets and articles.
+   Mathematical typography and the semantic definition/theorem panels remain in
+   typography.css. */
+:root{
+  --ui-ink:#233d4c;
+  --ui-blue:#14698f;
+  --ui-blue-soft:#f3faff;
+  --ui-blue-line:#88bed9;
+  --ui-amber:#a9561a;
+  --ui-amber-soft:#fffaf0;
+  --ui-amber-line:#dfa65a;
+  --ui-rule:#dce7ed;
+}
+
+.site-header{border-bottom-color:var(--ui-rule);box-shadow:0 2px 16px rgba(27,65,87,.035)}
+.primary-nav a{transition:color .18s ease}
+.primary-nav a:hover,.primary-nav a[aria-current="page"]{color:var(--ui-blue)}
+.primary-nav a[aria-current="page"]:after{height:3px;background:var(--ui-blue)}
+.search-trigger:hover{border-color:var(--ui-blue-line);background:var(--ui-blue-soft);color:var(--ui-ink)}
+.site-footer{border-top-color:var(--ui-rule)}
+
+/* A small set of repeated visual signals connects the site to the textbook. */
+.page-heading .eyebrow,.article-header .eyebrow{color:var(--ui-blue);letter-spacing:.1em}
+.page-heading h1{color:#202c33}
+.page-heading:after{content:"";display:block;width:56px;height:3px;background:var(--ui-amber-line);margin-top:23px}
+.section-heading h2,.subject-title h2{color:var(--ui-ink)}
+.section-heading:has(h2):before{content:"";width:3px;min-height:23px;align-self:center;background:var(--ui-blue-line);order:-1;margin-right:-9px}
+.subject-title{border-bottom-color:var(--ui-rule)}
+.subject-title h2{border-left:3px solid var(--ui-amber-line);padding-left:14px}
+
+/* The home page remains spare, while the three entry points gain distinction. */
+.home-shell .hero{border-bottom:1px solid var(--ui-rule);padding-bottom:62px}
+.home-shell .hero-copy .eyebrow{color:var(--ui-blue)}
+.home-shell .hero h1{color:#1d2a31}
+.home-shell .entries{gap:14px;border:0;padding:0;margin:18px 0 8px}
+.home-shell .entry,.home-shell .entry:first-child,.home-shell .entry:last-child{
+  min-width:0;padding:23px 25px 25px;border:1px solid var(--ui-rule);
+  border-left:3px solid var(--ui-blue-line);border-radius:2px;background:var(--ui-blue-soft);
+  transition:border-color .18s ease,transform .18s ease,background .18s ease;
+}
+.home-shell .entry:nth-child(2){background:var(--ui-amber-soft);border-left-color:var(--ui-amber-line)}
+.home-shell .entry:nth-child(3){background:#fbfcfd;border-left-color:#aabdc7}
+.home-shell .entry:hover{transform:translateY(-2px);border-color:#adcad9}
+.home-shell .entry:nth-child(2):hover{border-color:#e1bd87}
+.home-shell .entry h2{color:var(--ui-ink)}
+.home-shell .entry:nth-child(2) h2{color:var(--ui-amber)}
+.home-shell .entry p{color:#526571}
+.home-shell .topic-intro{background:var(--ui-blue-soft);border-left:3px solid var(--ui-blue-line)}
+.home-shell .principle{border-top:3px solid var(--ui-amber-line)}
+
+/* Topic banners alternate with a quiet rhythm instead of one repeated tint. */
+a.collection-banner{
+  border:1px solid var(--ui-rule);border-left:4px solid var(--ui-blue-line);
+  border-radius:2px;background:var(--ui-blue-soft);
+  transition:border-color .18s ease,background .18s ease;
+}
+a.collection-banner:hover{background:#eaf6fd;border-color:#b7d5e4;border-left-color:var(--ui-blue)}
+a.collection-banner:nth-of-type(even){background:var(--ui-amber-soft);border-left-color:var(--ui-amber-line)}
+a.collection-banner:nth-of-type(even):hover{background:#fff5e5;border-color:#ecd5ad;border-left-color:var(--ui-amber)}
+a.collection-banner h2{color:var(--ui-ink)}
+a.collection-banner:nth-of-type(even) h2{color:var(--ui-amber)}
+a.collection-banner p{color:#526571}
+.collection-type-nav a{border-radius:2px;background:#fff;border-top:3px solid var(--ui-blue-line)}
+.collection-type-nav a:nth-child(2){border-top-color:var(--ui-amber-line)}
+.collection-type-nav a:nth-child(3){border-top-color:#9cb6c0}
+.collection-type-nav a:hover{background:var(--ui-blue-soft)}
+.collection-type-nav a:nth-child(2):hover{background:var(--ui-amber-soft)}
+.branch-card{border-radius:2px;border-color:var(--ui-rule);background:#fff;border-top:3px solid var(--ui-blue-line)}
+.branch-card:nth-child(2n){border-top-color:var(--ui-amber-line);background:#fffdfa}
+.branch-card h3{color:var(--ui-ink)}
+.branch-card:nth-child(2n) h3{color:var(--ui-amber)}
+.branch-card a:hover{color:var(--ui-blue)}
+.topic-card:hover{background:var(--ui-blue-soft)}
+
+/* Navigational rails read as indexes, not competing article panels. */
+.knowledge-sidebar,.problem-sidebar{border-right-color:var(--ui-rule)}
+.knowledge-sidebar .side-home,.problem-sidebar .back-link{color:var(--ui-blue)}
+.knowledge-sidebar .side-chapter>a.current,
+.knowledge-sidebar .side-branch>a.current,.problem-sidebar .side-problem-list>a.current{
+  color:var(--ui-ink);background:var(--ui-blue-soft);border-left:3px solid var(--ui-blue-line);
+}
+.article-rail{border-left-color:var(--ui-rule)}
+.article-rail nav a:hover,.article-rail nav a.active{color:var(--ui-blue)}
+.article-header{border-bottom-color:var(--ui-rule)}
+.article-header h1{color:#1f2b32}
+
+/* Problem statements are gathered visually; proofs and numbered equations
+   retain the uninterrupted, unboxed textbook rhythm. */
+.reading-layout>.problem-sidebar+.article .prose>#statement{
+  min-width:0;padding:23px 27px 24px;border-left:3px solid var(--ui-blue-line);
+  background:#f7fbfe;
+}
+.reading-layout>.problem-sidebar+.article .prose>#statement>h2{margin-top:0;color:var(--ui-blue)}
+.reading-layout>.problem-sidebar+.article .prose>#statement .problem-figure{background:transparent}
+.reading-layout>.problem-sidebar+.article .prose>#statement .problem-figure img{mix-blend-mode:multiply}
+.reading-layout>.problem-sidebar+.article .prose>#statement .numbered-equation,
+.reading-layout>.problem-sidebar+.article .prose>#statement .equation-math{min-width:0;max-width:100%;background:transparent}
+.reading-layout>.problem-sidebar+.article .prose>#statement .article-section>h3{
+  border-bottom:1px solid #d8e9f2;padding-bottom:7px;color:var(--ui-ink);
+}
+
+/* Reference and search surfaces use the same restrained two-colour grammar. */
+.problem-filters{background:var(--ui-blue-soft);border:1px solid var(--ui-rule);border-left:3px solid var(--ui-blue-line)}
+.topic-filters button[aria-pressed="true"],.news-filters button[aria-pressed="true"]{background:var(--ui-blue);border-color:var(--ui-blue);color:#fff}
+.topic-filters button:hover,.news-filters button:hover{border-color:var(--ui-blue-line)}
+.table-caption{border-top:2px solid var(--ui-blue-line);padding-top:12px;color:var(--ui-ink)}
+.problem-table thead{background:#f5fafc}
+.problem-table tbody tr:nth-child(2n){background:#fcfdfd}
+.problem-table tbody tr:hover{background:var(--ui-blue-soft)}
+.problem-table .title-cell>a:hover{color:var(--ui-blue)}
+.news-list>div{border-left:3px solid var(--ui-blue-line);padding-left:21px;background:#fbfdfe}
+.news-list>div:nth-child(2n){border-left-color:var(--ui-amber-line);background:#fffdfa}
+.news-list .news-row h3{color:var(--ui-ink)}
+.news-list>div:nth-child(2n) .news-row h3{color:var(--ui-amber)}
+.search-result:hover{background:var(--ui-blue-soft)}
+
+@media(max-width:760px){
+  .home-shell .hero{padding-bottom:35px}
+  .home-shell .entries{gap:10px;margin-top:14px}
+  .home-shell .entry,.home-shell .entry:first-child,.home-shell .entry:last-child{padding:16px 17px 18px}
+  .section-heading:has(h2):before{margin-right:-6px}
+  .page-heading:after{margin-top:17px}
+  .reading-layout>.problem-sidebar+.article .prose>#statement{padding:17px 16px 19px}
+  .news-list>div{padding-left:14px}
+}
+@media(prefers-reduced-motion:reduce){
+  .home-shell .entry,a.collection-banner,.collection-type-nav a{transition:none}
+  .home-shell .entry:hover{transform:none}
+}
+@media print{
+  .home-shell .entry,a.collection-banner,.branch-card,.news-list>div,
+  .reading-layout>.problem-sidebar+.article .prose>#statement{background:transparent;border-color:#777}
+  .page-heading:after,.section-heading:has(h2):before{display:none}
+  .reading-layout>.problem-sidebar+.article .prose>#statement .problem-figure img{mix-blend-mode:normal}
+}
+
+/* Section numbers belong to the document hierarchy, not to authored titles. */
+.prose .section-number,
+.article-rail .section-number {
+  font-family: var(--font-serif, "STIX Two Text", "STIXGeneral", serif);
+  font-variant-numeric: tabular-nums;
+  color: currentColor;
+  opacity: .7;
+  margin-right: .3em;
+}
+.prose .article-section > .article-section {
+  margin-top: 1.65em;
+}
+.prose h3, .prose h4, .prose h5, .prose h6 {
+  line-height: 1.65;
+  text-wrap: pretty;
+}
+.article-rail .toc-sub {
+  padding-left: 1em;
+  font-size: .84rem;
+  line-height: 1.6;
+}
