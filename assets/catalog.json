@@ -2685,6 +2685,363 @@
   },
   {
     "subject": "数学",
+    "branch": "初等数学",
+    "topics": "双曲线|实弦中点|二次型",
+    "difficulty": "10",
+    "difficulty-note": "斜率关系只是必要条件，还须证明两端点真实存在并排除零半弦。",
+    "prerequisites": "二次方程、向量、双曲线",
+    "origin": "思维训练",
+    "collection": "从猜想到证明",
+    "collection-id": "conjecture-proof",
+    "collection-kind": "topic",
+    "collection-description": "从特例发现候选，用等价变形、几何不变量、对称、构造与最优界完成证明。",
+    "summary": "用中点与半弦向量同时处理实交点、渐近线和退化弦。",
+    "id": "P0108",
+    "title": "双曲线的哪些点能成为实弦中点",
+    "category": "题目",
+    "links": [
+      "cb-c-hyperbola-chords",
+      "cb-c-polarization",
+      "k-conjecture-proof"
+    ]
+  },
+  {
+    "subject": "数学",
+    "branch": "初等数学",
+    "topics": "幂迭代|单调数列|极限",
+    "difficulty": "10",
+    "difficulty-note": "需要区分趋于六与存在严格高于六的统一下界。",
+    "prerequisites": "数列、幂函数、极限",
+    "origin": "思维训练",
+    "collection": "从猜想到证明",
+    "collection-id": "conjecture-proof",
+    "collection-kind": "topic",
+    "collection-description": "从特例发现候选，用等价变形、几何不变量、对称、构造与最优界完成证明。",
+    "summary": "求通项后判定四组初值下的单调方向与能否存在统一界。",
+    "id": "P0109",
+    "title": "三次递推中的单调性与严格界",
+    "category": "题目",
+    "links": [
+      "k-power-iteration",
+      "a-induction",
+      "k-limits"
+    ]
+  },
+  {
+    "subject": "数学",
+    "branch": "初等数学",
+    "topics": "双曲线|焦点三角形|分支讨论",
+    "difficulty": "20",
+    "difficulty-note": "距离差的绝对值产生两个分支，须逐一构造而不能凭图删去一个。",
+    "prerequisites": "双曲线焦点定义、圆的切线、余弦定理",
+    "origin": "思维训练",
+    "collection": "从猜想到证明",
+    "collection-id": "conjecture-proof",
+    "collection-kind": "topic",
+    "collection-description": "从特例发现候选，用等价变形、几何不变量、对称、构造与最优界完成证明。",
+    "summary": "同时保留焦半径之差的两个符号，构造两种合法分支配置。",
+    "id": "P0110",
+    "title": "焦点切圆与双曲线离心率的两种可能",
+    "category": "题目",
+    "links": [
+      "cb-c-hyperbola-focus",
+      "cb-d-hyperbola-focal-angle",
+      "k-conjecture-proof"
+    ]
+  },
+  {
+    "subject": "数学",
+    "branch": "初等数学",
+    "topics": "椭圆|定点问题|韦达定理",
+    "difficulty": "20",
+    "difficulty-note": "使用覆盖竖直弦的参数式，解释倍长构造与参数互补的对应。",
+    "prerequisites": "椭圆方程、韦达定理、向量",
+    "origin": "思维训练",
+    "collection": "从猜想到证明",
+    "collection-id": "conjecture-proof",
+    "collection-kind": "topic",
+    "collection-description": "从特例发现候选，用等价变形、几何不变量、对称、构造与最优界完成证明。",
+    "summary": "以顶点为参数原点，将弦端点关系化成两个参数之和恒定。",
+    "id": "P0111",
+    "title": "椭圆弦与水平倍长构造中的定点",
+    "category": "题目",
+    "links": [
+      "k-fixed-point-pencil",
+      "a-roots-vieta",
+      "cb-c-affine-invariants"
+    ]
+  },
+  {
+    "subject": "数学",
+    "branch": "初等数学",
+    "topics": "对数|指数函数|参数比较",
+    "difficulty": "10",
+    "difficulty-note": "特例只能证明某种排序存在；不可能性须用成对比较覆盖所有参数。",
+    "prerequisites": "对数运算、一次函数、单调性",
+    "origin": "思维训练",
+    "collection": "从猜想到证明",
+    "collection-id": "conjecture-proof",
+    "collection-kind": "topic",
+    "collection-description": "从特例发现候选，用等价变形、几何不变量、对称、构造与最优界完成证明。",
+    "summary": "用三个对数差的唯一零点排出全部次序，证明不可能的排序。",
+    "id": "P0112",
+    "title": "共同对数参数下的指数大小次序",
+    "category": "题目",
+    "links": [
+      "a-exponential",
+      "a-logarithms",
+      "k-conjecture-proof",
+      "fd-structural-comparison"
+    ]
+  },
+  {
+    "subject": "数学",
+    "branch": "初等数学",
+    "topics": "三角恒等式|三角形|必要充分",
+    "difficulty": "15",
+    "difficulty-note": "不能直接假设直角；需先由符号与三角形内角约束排除锐角和钝角两类。",
+    "prerequisites": "三角恒等式、三角形面积、内角和",
+    "origin": "思维训练",
+    "collection": "从猜想到证明",
+    "collection-id": "conjecture-proof",
+    "collection-kind": "topic",
+    "collection-description": "从特例发现候选，用等价变形、几何不变量、对称、构造与最优界完成证明。",
+    "summary": "先证明直角位置，再由面积与正弦关系求边长和组合量。",
+    "id": "P0113",
+    "title": "两条三角约束如何确定直角三角形",
+    "category": "题目",
+    "links": [
+      "a-trigonometry",
+      "g-vectors",
+      "k-conjecture-proof"
+    ]
+  },
+  {
+    "subject": "数学",
+    "branch": "初等数学",
+    "topics": "数学期望|指示变量|有放回抽样",
+    "difficulty": "5",
+    "difficulty-note": "识别出现种数与抽到次数的区别后可直接用线性性。",
+    "prerequisites": "有限等可能模型、乘法原理",
+    "origin": "思维训练",
+    "collection": "从猜想到证明",
+    "collection-id": "conjecture-proof",
+    "collection-kind": "topic",
+    "collection-description": "从特例发现候选，用等价变形、几何不变量、对称、构造与最优界完成证明。",
+    "summary": "以每个球是否至少出现一次为指示变量，并用完整分布交叉核验。",
+    "id": "P0114",
+    "title": "三次有放回抽取中出现的不同球数",
+    "category": "题目",
+    "links": [
+      "k-expectation-indicators",
+      "k-probability",
+      "a-counting"
+    ]
+  },
+  {
+    "subject": "数学",
+    "branch": "初等数学",
+    "topics": "反演|轨迹方程|椭圆|最值可达",
+    "difficulty": "20",
+    "difficulty-note": "反演与斜率关系给删点圆轨迹，最值必须检查删除点和三角不等式的等号。",
+    "prerequisites": "椭圆、向量、二次函数",
+    "origin": "思维训练",
+    "collection": "从猜想到证明",
+    "collection-id": "conjecture-proof",
+    "collection-kind": "topic",
+    "collection-description": "从特例发现候选，用等价变形、几何不变量、对称、构造与最优界完成证明。",
+    "summary": "先求真实轨迹及删除点，再证明距离上界的等号点仍然可行。",
+    "id": "P0115",
+    "title": "反演约束下的圆轨迹与椭圆最远距离",
+    "category": "题目",
+    "links": [
+      "k-inversion",
+      "cb-a-ellipse-locus",
+      "fd-quantifiers-ranges",
+      "k-conjecture-proof"
+    ]
+  },
+  {
+    "subject": "数学",
+    "branch": "初等数学",
+    "topics": "三角函数|极小极大|周期|区间覆盖",
+    "difficulty": "25",
+    "difficulty-note": "须证明任意相位都有足够大的函数值，再在一个相位下证明全实轴上界。",
+    "prerequisites": "三角恒等式、导数、量词",
+    "origin": "思维训练",
+    "collection": "从猜想到证明",
+    "collection-id": "conjecture-proof",
+    "collection-kind": "topic",
+    "collection-description": "从特例发现候选，用等价变形、几何不变量、对称、构造与最优界完成证明。",
+    "summary": "把最小化最大值分成统一下界和一个可实现的相位选择。",
+    "id": "P0116",
+    "title": "五倍角叠加的相位最优界",
+    "category": "题目",
+    "links": [
+      "k-minimax",
+      "a-trigonometry",
+      "fd-periodic-trigonometric",
+      "fd-quantifiers-ranges"
+    ]
+  },
+  {
+    "subject": "数学",
+    "branch": "初等数学",
+    "topics": "导数|指数不等式|参数",
+    "difficulty": "10",
+    "difficulty-note": "最大值条件提供存在的取等点；候选参数还须经过全域验证。",
+    "prerequisites": "导数、极值必要条件、指数函数",
+    "origin": "思维训练",
+    "collection": "从猜想到证明",
+    "collection-id": "conjecture-proof",
+    "collection-kind": "topic",
+    "collection-description": "从特例发现候选，用等价变形、几何不变量、对称、构造与最优界完成证明。",
+    "summary": "在实际取到最大值的点同时使用函数值和驻点条件，再验证全域上界。",
+    "id": "P0117",
+    "title": "已知商函数最大值反求参数",
+    "category": "题目",
+    "links": [
+      "k-derivative",
+      "fd-inequality-bounds",
+      "k-conjecture-proof"
+    ]
+  },
+  {
+    "subject": "数学",
+    "branch": "初等数学",
+    "topics": "等差数列|同余|构造",
+    "difficulty": "10",
+    "difficulty-note": "必要条件只能筛选公差，需用一组完整配对证明可行。",
+    "prerequisites": "等差数列求和、奇偶性",
+    "origin": "思维训练",
+    "collection": "从猜想到证明",
+    "collection-id": "conjecture-proof",
+    "collection-kind": "topic",
+    "collection-description": "从特例发现候选，用等价变形、几何不变量、对称、构造与最优界完成证明。",
+    "summary": "用总和、奇偶和最小配对和缩小候选，再给出真实配对。",
+    "id": "P0118",
+    "title": "十二个奇数配对成等差数列",
+    "category": "题目",
+    "links": [
+      "a-arithmetic",
+      "a-congruences",
+      "k-conjecture-proof"
+    ]
+  },
+  {
+    "subject": "数学",
+    "branch": "初等数学",
+    "topics": "数学期望|对称|条件抽样",
+    "difficulty": "5",
+    "difficulty-note": "避免把删除前的对称性和独立性错误延用到新样本空间。",
+    "prerequisites": "有限等可能模型、坐标向量",
+    "origin": "思维训练",
+    "collection": "从猜想到证明",
+    "collection-id": "conjecture-proof",
+    "collection-kind": "topic",
+    "collection-description": "从特例发现候选，用等价变形、几何不变量、对称、构造与最优界完成证明。",
+    "summary": "原集合用反对称消去总和，删点后重新计算分母。",
+    "id": "P0119",
+    "title": "中心对称点集中删去一点后的期望",
+    "category": "题目",
+    "links": [
+      "k-symmetric-average",
+      "k-expectation-indicators",
+      "k-probability"
+    ]
+  },
+  {
+    "subject": "数学",
+    "branch": "初等数学",
+    "topics": "二面角|正交投影|反例",
+    "difficulty": "15",
+    "difficulty-note": "二面角与空间平面角不同；需将沿棱位移和截面几何分开。",
+    "prerequisites": "空间向量、点积、勾股定理",
+    "origin": "思维训练",
+    "collection": "从猜想到证明",
+    "collection-id": "conjecture-proof",
+    "collection-kind": "topic",
+    "collection-description": "从特例发现候选，用等价变形、几何不变量、对称、构造与最优界完成证明。",
+    "summary": "以垂直截面统一证明距离界，并给出不成立命题的具体反例。",
+    "id": "P0120",
+    "title": "固定二面角中的距离与垂直关系",
+    "category": "题目",
+    "links": [
+      "k-dihedral-projection",
+      "g-vectors",
+      "k-conjecture-proof"
+    ]
+  },
+  {
+    "subject": "数学",
+    "branch": "初等数学",
+    "topics": "圆|公共截线|连续性|最值",
+    "difficulty": "25",
+    "difficulty-note": "多个选项分别需要可行域、穷尽分类、存在性与可达最值，不能由一张图统一猜测。",
+    "prerequisites": "点到直线距离、介值定理、柯西不等式",
+    "origin": "思维训练",
+    "collection": "从猜想到证明",
+    "collection-id": "conjecture-proof",
+    "collection-kind": "topic",
+    "collection-description": "从特例发现候选，用等价变形、几何不变量、对称、构造与最优界完成证明。",
+    "summary": "以投影宽度排除临界方向，严格计数等弦直线，再构造额外等和截线。",
+    "id": "P0121",
+    "title": "三个单位圆的公共截线与弦长和",
+    "category": "题目",
+    "links": [
+      "k-circle-chords",
+      "k-inequality",
+      "k-limits",
+      "k-conjecture-proof"
+    ]
+  },
+  {
+    "subject": "数学",
+    "branch": "初等数学",
+    "topics": "数列|部分和|分组|构造",
+    "difficulty": "20",
+    "difficulty-note": "九项窗口与三项分组必须对齐讨论，并验证局部等比段能嵌入无限数列。",
+    "prerequisites": "等比数列、部分和、分类讨论",
+    "origin": "思维训练",
+    "collection": "从猜想到证明",
+    "collection-id": "conjecture-proof",
+    "collection-kind": "topic",
+    "collection-description": "从特例发现候选，用等价变形、几何不变量、对称、构造与最优界完成证明。",
+    "summary": "按起始下标分类得到公比上界，再补齐边界块构造全数列。",
+    "id": "P0122",
+    "title": "三项块和约束下的九项等比段",
+    "category": "题目",
+    "links": [
+      "k-block-sums",
+      "a-geometric",
+      "k-conjecture-proof"
+    ]
+  },
+  {
+    "subject": "数学",
+    "branch": "初等数学",
+    "topics": "椭圆|焦点弦|面积比|最值",
+    "difficulty": "20",
+    "difficulty-note": "面积比需区分同底高比，角的正切还需核对内积符号以避免误用锐角公式。",
+    "prerequisites": "椭圆、焦半径、向量、均值不等式",
+    "origin": "思维训练",
+    "collection": "从猜想到证明",
+    "collection-id": "conjecture-proof",
+    "collection-kind": "topic",
+    "collection-description": "从特例发现候选，用等价变形、几何不变量、对称、构造与最优界完成证明。",
+    "summary": "用焦半径参数求面积比，再以向量证明角为锐角并求最小正切。",
+    "id": "P0123",
+    "title": "椭圆焦点弦的面积比与角正切最小值",
+    "category": "题目",
+    "links": [
+      "cb-a-focal-chords",
+      "g-vectors",
+      "a-amgm",
+      "k-conjecture-proof"
+    ]
+  },
+  {
+    "subject": "数学",
     "branch": "初等代数",
     "chapter": "数与运算",
     "order": "30",
@@ -4164,7 +4521,9 @@
     "links": [
       "cb-c-hyperbola-focus",
       "cb-c-polar-dual",
-      "cb-c-intersections-pencil"
+      "cb-c-intersections-pencil",
+      "P0108",
+      "k-conjecture-proof"
     ]
   },
   {
@@ -6257,6 +6616,24 @@
   },
   {
     "subject": "数学",
+    "branch": "初等数学",
+    "chapter": "数列与迭代",
+    "order": "1200",
+    "level": "高中进阶",
+    "summary": "先把部分和条件差分成块和，再处理局部等比数列与分组边界的对齐。",
+    "id": "k-block-sums",
+    "title": "等间隔部分和与连续分组",
+    "category": "知识",
+    "links": [
+      "a-sequences",
+      "a-geometric",
+      "a-finite-differences",
+      "k-conjecture-proof",
+      "P0122"
+    ]
+  },
+  {
+    "subject": "数学",
     "branch": "复变函数",
     "summary": "边界积分决定圆盘内全纯函数的值。",
     "id": "k-cauchy",
@@ -6264,6 +6641,24 @@
     "category": "知识",
     "links": [
       "k-complex"
+    ]
+  },
+  {
+    "subject": "数学",
+    "branch": "解析几何",
+    "chapter": "直线、弦与交点",
+    "order": "450",
+    "level": "高中进阶",
+    "summary": "把同时截多个圆的问题化为圆心投影的区间交，再由垂距计算弦长。",
+    "id": "k-circle-chords",
+    "title": "圆的截弦与等宽条带",
+    "category": "知识",
+    "links": [
+      "k-conic",
+      "k-limits",
+      "k-inequality",
+      "P0121",
+      "g-vectors"
     ]
   },
   {
@@ -6316,6 +6711,34 @@
   },
   {
     "subject": "数学",
+    "branch": "数学方法",
+    "chapter": "猜想与严格论证",
+    "order": "1200",
+    "level": "高中进阶",
+    "summary": "以解集包含关系区分发现、排除、必要条件与充分验证。",
+    "id": "k-conjecture-proof",
+    "title": "猜想、反例与候选集合",
+    "category": "知识",
+    "links": [
+      "k-logic",
+      "a-equivalence",
+      "a-induction",
+      "a-polynomial-interpolation",
+      "P0108",
+      "P0110",
+      "P0112",
+      "P0113",
+      "P0115",
+      "P0117",
+      "P0118",
+      "P0120",
+      "P0121",
+      "P0122",
+      "P0123"
+    ]
+  },
+  {
+    "subject": "数学",
     "branch": "数学分析",
     "summary": "从局部线性逼近得到区间上的变化率。",
     "id": "k-derivative",
@@ -6323,6 +6746,22 @@
     "category": "知识",
     "links": [
       "k-functions"
+    ]
+  },
+  {
+    "subject": "数学",
+    "branch": "初等数学",
+    "chapter": "空间几何",
+    "order": "1200",
+    "level": "高中进阶",
+    "summary": "把沿棱的高度差和垂直于棱的平面几何分开，避免用空间角代替二面角。",
+    "id": "k-dihedral-projection",
+    "title": "二面角的正交截面与距离分解",
+    "category": "知识",
+    "links": [
+      "g-vectors",
+      "k-conjecture-proof",
+      "P0120"
     ]
   },
   {
@@ -6351,6 +6790,41 @@
       "m-energy-system",
       "m-work-frames",
       "m-konig"
+    ]
+  },
+  {
+    "subject": "数学",
+    "branch": "概率论",
+    "chapter": "离散随机变量",
+    "order": "1200",
+    "level": "高中进阶",
+    "summary": "把出现的对象总数写成指示变量之和，避免枚举整个联合分布。",
+    "id": "k-expectation-indicators",
+    "title": "有限期望的线性性与指示变量",
+    "category": "知识",
+    "links": [
+      "k-probability",
+      "a-counting",
+      "a-binomial",
+      "P0114",
+      "P0119"
+    ]
+  },
+  {
+    "subject": "数学",
+    "branch": "解析几何",
+    "chapter": "直线、弦与交点",
+    "order": "460",
+    "level": "高中进阶",
+    "summary": "先求候选交点，再验证整族直线的系数恒等式，并检查退化成员。",
+    "id": "k-fixed-point-pencil",
+    "title": "直线族过定点的系数判据",
+    "category": "知识",
+    "links": [
+      "a-polynomial",
+      "a-linear-systems",
+      "cb-b-homogeneous-coordinates",
+      "P0111"
     ]
   },
   {
@@ -6391,6 +6865,23 @@
     "category": "知识",
     "links": [
       "k-collection"
+    ]
+  },
+  {
+    "subject": "数学",
+    "branch": "解析几何",
+    "chapter": "几何变换",
+    "order": "1100",
+    "level": "高中进阶",
+    "summary": "把同射线上的距离乘积转成可逆坐标映射，并证明圆与直线的变换关系。",
+    "id": "k-inversion",
+    "title": "定点反演与距离乘积",
+    "category": "知识",
+    "links": [
+      "g-vectors",
+      "k-conic",
+      "a-equivalence",
+      "P0115"
     ]
   },
   {
@@ -6464,6 +6955,23 @@
     ]
   },
   {
+    "subject": "数学",
+    "branch": "数学方法",
+    "chapter": "最优界与存在性",
+    "order": "1200",
+    "level": "高中进阶",
+    "summary": "先给每个参数一个不可突破的界，再构造一个在全定义域达到该界的参数。",
+    "id": "k-minimax",
+    "title": "含参最优界与极小极大",
+    "category": "知识",
+    "links": [
+      "fd-quantifiers-ranges",
+      "fd-inequality-bounds",
+      "k-inequality",
+      "P0116"
+    ]
+  },
+  {
     "subject": "物理",
     "branch": "普通力学",
     "chapter": "质点系与守恒律",
@@ -6506,6 +7014,23 @@
     "category": "知识",
     "links": [
       "k-integral"
+    ]
+  },
+  {
+    "subject": "数学",
+    "branch": "初等数学",
+    "chapter": "数列与迭代",
+    "order": "1200",
+    "level": "高中进阶",
+    "summary": "用可逆仿射换元求出精确通项，并从模长区分收敛、固定点与发散。",
+    "id": "k-power-iteration",
+    "title": "幂迭代的归一化与稳定区间",
+    "category": "知识",
+    "links": [
+      "a-recurrence",
+      "a-induction",
+      "k-limits",
+      "P0109"
     ]
   },
   {
@@ -6580,6 +7105,23 @@
       "t-microstates",
       "t-grand-canonical",
       "t-fluctuations"
+    ]
+  },
+  {
+    "subject": "数学",
+    "branch": "概率论",
+    "chapter": "离散随机变量",
+    "order": "1200",
+    "level": "高中进阶",
+    "summary": "用保持权重的配对消去总和，再计算删除对象后的均值。",
+    "id": "k-symmetric-average",
+    "title": "有限均值的对称配对与删点公式",
+    "category": "知识",
+    "links": [
+      "k-probability",
+      "g-vectors",
+      "k-expectation-indicators",
+      "P0119"
     ]
   },
   {
