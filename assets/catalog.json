@@ -299,7 +299,6 @@
     "category": "题目",
     "links": [
       "g-vectors",
-      "k-cauchy",
       "k-inequality"
     ]
   },
@@ -6560,7 +6559,7 @@
     "title": "参数曲线族、包络与真实可达集合",
     "category": "知识",
     "links": [
-      "k-circular",
+      "k-conic",
       "k-collection",
       "k-derivative"
     ]
@@ -6595,7 +6594,7 @@
     "links": [
       "a-trigonometry",
       "a-equivalence",
-      "g-conics"
+      "k-conic"
     ]
   },
   {
@@ -6610,7 +6609,7 @@
     "category": "知识",
     "links": [
       "k-vector",
-      "k-cauchy",
+      "k-inequality",
       "m-angular"
     ]
   },
@@ -9916,6 +9915,7 @@
     "title": "热辐射、普朗克分布与黑体定律",
     "category": "知识",
     "links": [
+      "t-quantum-heat",
       "t-quantum-statistics",
       "t-convection",
       "t-entropy"
