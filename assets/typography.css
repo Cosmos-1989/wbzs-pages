@@ -95,3 +95,7 @@ h1,h2,h3,h4,h5{font-family:var(--font);font-weight:700;letter-spacing:0}
   .reading-layout>.knowledge-sidebar+.article .prose>.article-section:is(.definition,.theorem) .equation-math{overflow:visible}
   .reading-layout>.knowledge-sidebar+.article .prose>.article-section:is(.definition,.theorem) .problem-figure img{mix-blend-mode:normal}
 }
+
+/* Unnumbered displays remain separate from the surrounding prose. */
+.display-equation{display:flex;min-width:0;width:100%;margin:1.1em 0}.display-equation .equation-math{flex:1;min-width:0;overflow-x:auto;overflow-y:hidden;padding:0 2px}.display-equation .katex-display{margin:0;text-align:center}
+@media(max-width:360px){.display-equation .katex-display{font-size:.9em}}
