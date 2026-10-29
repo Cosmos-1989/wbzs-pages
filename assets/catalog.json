@@ -5993,7 +5993,7 @@
     "chapter": "结构、逻辑与同构",
     "order": "150",
     "level": "高中数学与大学基础",
-    "summary": "在不连通的定义域上逐支分析 e^t/t 及 x/ln x。",
+    "summary": "在不连通的定义域上逐支分析 \\frac {e^t}{t} 及 x/ln x。",
     "id": "fd-exponential-ratio",
     "title": "指数比值函数的两个分支",
     "category": "知识",
